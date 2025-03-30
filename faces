@@ -1,0 +1,39 @@
+Create a faces/ Folder and Add Images
+This folder will store images of registered users.
+
+Create a new folder named faces/ in your project directory.
+
+Add images (JPG, PNG) of different people in this folder.
+
+Name the images as the person's name (e.g., Utkarsh.jpg, JohnDoe.png).
+
+Ensure the main.py script loads images from this folder.
+
+Code to Read Faces from the faces/ Folder
+Modify your main.py to automatically load images from the faces/ folder:
+
+python
+Copy
+Edit
+import os
+import cv2
+import numpy as np
+import face_recognition
+
+# Path to the faces dataset folder
+faces_path = "faces/"
+known_face_encodings = []
+known_face_names = []
+
+# Load all images from the faces folder
+for filename in os.listdir(faces_path):
+    if filename.endswith(".jpg") or filename.endswith(".png"):
+        img = face_recognition.load_image_file(f"{faces_path}/{filename}")
+        encoding = face_recognition.face_encodings(img)
+
+        if encoding:  # Ensure at least one face is detected
+            known_face_encodings.append(encoding[0])
+            known_face_names.append(os.path.splitext(filename)[0])  # Remove file extension
+
+print("✅ Encoding Complete!")
+Now, just add more images to the faces/ folder, and your program will automatically detect and encode them!
