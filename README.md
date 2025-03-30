@@ -43,3 +43,8 @@ python main.py
 
 ### 2️⃣ Attendance Marked Successfully  
 ![Attendance Marked](https://raw.githubusercontent.com/utkarsh1042005/Face-Recognition-Attendance-System./main/created_csv_file_sample.png)
+
+## 🎥 Demo Video  
+
+[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://github.com//utkarsh1042005/Face-Recognition-Attendance-System./blob/main/demo_working.mp4)
+
