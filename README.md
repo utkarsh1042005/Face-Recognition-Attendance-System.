@@ -29,8 +29,8 @@ Face_Attendance/ │── images/ # Folder containing images of registered peop
 git clone https://github.com/utkarsh1042005/Face-Recognition-Attendance-System.git 
 cd Face-Recognition-Attendance-System
 
-Install dependencies:
+2️⃣ Install dependencies:
 pip install -r requirements.txt
 
-Run the code
+3️⃣ Run the project:
 python main.py
