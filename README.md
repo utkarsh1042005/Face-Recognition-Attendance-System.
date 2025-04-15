@@ -60,7 +60,7 @@ python main.py
 👤 Adding New Faces
 Add an image to the faces/ folder.
 
-Make sure the file name is the person's name (e.g., John.jpg)
+Make sure the file name is the person name (e.g., John.jpg)
 
 Restart the script. It will re-encode all faces if encodings.pkl is not present.
 
